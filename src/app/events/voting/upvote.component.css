@@ -1,0 +1,42 @@
+.votingWidgetContainer {
+  padding-left:24px;
+}
+
+.votingWidget {
+  height: 64px;
+  padding-top: 7px;
+  /* border-radius: 21px; */
+  background-color: #53616E;
+}
+
+.votingButton {
+  margin-left: -7px;
+  margin-top: 1px;
+  cursor:pointer;
+
+  padding-left: 10px;
+}
+
+.votingButton i {
+  /* color: white; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge-inverse {
+  /* background-color: #fff; */
+  background-color: #53616E;
+
+  /* color: #4e5d6c; */
+  color: white;
+}
+
+.votingCount {
+  margin-left: -11px;
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: 14px;
+
+  margin-left: auto;
+  margin-right: auto;
+}

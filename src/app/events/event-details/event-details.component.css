@@ -1,0 +1,29 @@
+
+.event-details {
+  width: calc(90%);
+  margin-left: 5%;
+}
+
+.event-image {
+  height: 100px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.details-font-size {
+  font-size: 12pt;
+}
+
+.btn-regular {
+  background-color: #53616E;
+  border-radius: 0px;
+}
+.active {
+  background-color: #373A45;
+  border-radius: 0px;
+  color: white;
+}
+
+button:focus {outline:0 !important;}

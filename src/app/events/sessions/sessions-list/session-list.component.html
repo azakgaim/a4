@@ -1,0 +1,37 @@
+
+<!-- <div class="row" *ngFor="let session of sessions"> -->
+<div class="row" *ngFor="let session of visibleSessions">
+  <div class="col-md-1">
+    <!-- we would like to know:
+    1. how many votes the current session has
+    2. if the current user has voted
+    3. when a user clicked the component to vote
+        as a result:
+    a. we are going to listen to a vote event: (vote)="toggleVote(session)
+    b. we will get number of votes: [count]="session.voters.length
+    c. we need to know if this user has voted: [voted]="userHasVoted(session)" -->
+    <div *ngIf="authService.isUserAuthenticated()">
+      <upvote (vote)="toggleVote(session)"
+              [count]="session.voters.length"
+              [voted]="userHasVoted(session)"></upvote>
+    </div>
+  </div>
+
+  <div class="col-md-10">
+    <app-collapsable-well>
+
+        <div well-title>
+          {{session.name}}
+          <i *ngIf="session.voters.length > 3" class="glyphicon glyphicon-fire" style="color: red;"></i>
+        </div>
+
+        <div well-body class="details-font-size">
+          <h6>Presenter: {{session.presenter}}</h6><br />
+          <span>Duration: {{session.duration | duration}}</span><br />
+          <span>Level: {{session.level}}</span>
+          <p>{{session.abstract}}</p>
+        </div>
+
+    </app-collapsable-well>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+
+.events-list {
+  width: calc(90%);
+  margin-left: 5%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@-webkit-keyframes fadingIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadingIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadingIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadingIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.container {
+  -webkit-animation: fadingIn 3s; /*infinite;*/ /* Safari 4+ */
+  -moz-animation:    fadingIn 3s; /*infinite;*/ /* Fx 5+ */
+  -o-animation:      fadingIn 3s; /*infinite;*/ /* Opera 12+ */
+  animation:         fadingIn 3s; /*infinite;*/ /* IE 10+, Fx 29+ */
+}

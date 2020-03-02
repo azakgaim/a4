@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #354555;
+  color: white;
+}
+
+/* app css stylesheet */
+.hoverwell {
+  background-color: #53616E;
+  border: none;
+  border-radius: 15px;
+}
+.hoverwell:hover {
+  background-color: #485563;
+  cursor: pointer;
+}
+
+hr {
+  border-color: #53616E;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+.pointable {
+  cursor: pointer;
+}
+
+/*
+button {
+  color: #555;
+}
+
+[hidden] {
+  display: none !important;
+}
+*/
+.toast-success {
+  background-color: #51a351;
+}
+.toast-error {
+  background-color: #bd362f;
+}
+.toast-info {
+  background-color: #2f96b4;
+}
+.toast-warning {
+  background-color: #f89406;
+}

@@ -1,0 +1,10 @@
+<div class="container events-list">
+  <h1>Upcomming Angular Events</h1>
+  <hr />
+
+  <div class="row">
+    <div *ngFor="let event of events" class="col-md-6">
+        <app-event-thumbnail [event]="event"></app-event-thumbnail>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+.navbar {
+  width: calc(90%);
+  margin-left: 5%;
+}
+
+li:hover {
+  background-color: #485563;
+}
+div[class='navbar-header']:hover {
+  background-color: #485563
+}
+
+li > a {
+  color: white !important;
+}
+
+li > a.active {
+  color: #F97924 !important;  /*orange*/
+}
+div > a {
+  color: white;
+}
+div > a:hover {
+  color: white;
+}
+
+.nav.navbar-nav {
+  font-size: 15px;
+}
+#searchForm {
+  margin-right: 100px;
+}
+@media (max-width: 1200px) {
+  #searchForm {
+    display: none;
+  }
+}
